@@ -1,0 +1,117 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* LAYOUT
+All videos need to be in the center of the TV Screen, 
+Layered on each other and hedden when one is selected from the selector
+/*******************************************/
+
+/* Background setting to use PNG as background */
+.film-background {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+ 
+}
+
+/* Drop Video/Content into the box after it's centered. z-index is the trick. */
+.cover1{
+  position: absolute;
+  left: 242px;
+  top: 135px;
+  width: 764px;
+  height: 419px;
+  object-fit: fill;
+  z-index: 2;
+}
+
+.cover2{
+  position: absolute;
+  left: 247px;
+  top: 135px;
+  width: 787px;
+  height: 430px;
+  object-fit: fill;
+  z-index: 2;
+}
+
+.cover3{
+  position: absolute;
+  left: 247px;
+  top: 135px;
+  width: 787px;
+  height: 430px;
+  object-fit: fill;
+  z-index: 2;
+} 
+
+.button {
+  background-color: #708090; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  border-radius: 5px;
+ z-index: inherit;
+}
+
+.VOD{
+  width: 50%;
+  position: absolute; left: 28%;
+}
+
+bottom {
+  width: 50%;
+}
+
+.hidden1, .hidden2, .hidden3{
+  visibility: hidden;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/*body{
+/*  border: 3px solid red;
+/*}
+/*.cover1{
+/*  border: 3px solid green;
+/*}
+/*.cover2{
+/*  border: 3px solid blue
+/*}
+/*.cover3{
+/*  border: 3px solid purple
+/*} */
+
+@media screen and (max-width: 1243px) {
+   /**/
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Movies</title>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+	<main class="clearfix">
+		<div >
+			<img class="film-background" src="img/TV.png" alt="Home Movies">
+			<video class="cover1 hidden1" loop muted autoplay playsinline preload="auto">
+				<source id="video1" class="myvideo" src="img/Video_1.mov">
+			</video>
+			<video class="cover2 hidden2" loop muted autoplay playsinline preload="auto">
+    	        <source id="video2" class="myvideo" src="img/modern-facebook-cover-video-maker-with-animated-geometric-shapes-1549_1.mp4">
+			</video>
+			<video class="cover3 hidden3" loop muted autoplay playsinline preload="auto">
+    			<source id="video3" class="myvideo" src="img/Who are You - The Re-Introduction.mp4">
+    	    </video>
+		</div>
+		<div>
+			<audio controls class="radio1 hidden10">
+				<source src="img/Ride Music Video Audio.m4a">
+			</audio>
+			<audio controls class="radio2 hidden11">
+				<source src="img/Facebook Audio.m4a">
+			</audio>	
+			<audio controls class="radio3 hidden12">
+				<source src="img/Who Are You Audio.m4a">
+			</audio>
+		</div>
+	</main>
+	<bottom>
+		<!--<h2>Remote</h2> -->
+		<ul class="VOD">
+			<button id="Channel1" class="button1" src="img/Video_1.mov" type="button">Music Video Teaser</button>
+			<button id="Channel2" class="button2" src="img/modern-facebook-cover-video-maker-with-animated-geometric-shapes-1549_1.mp4" type="button">Facebook Intro</button>
+			<button id="Channel3" class="button3" src="img/Who are You - The Re-Introduction.mp4" type="button">Who Are You</button>		
+		</ul>
+		<script type="text/javascript" src="js/main.js"></script>
+	</bottom>
+</body>
+</html>
+<!-- Add auideo files for videos and sync click in JS-->
