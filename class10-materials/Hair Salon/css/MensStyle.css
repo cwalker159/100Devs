@@ -1,0 +1,379 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+nav{
+  border: 3px sold green;
+}
+.hamburger{
+  border: 3px sold blue;
+}
+.nav-links{
+  border: 3px sold red;
+}
+.nav-icons{
+  border: 3px sold yellow;
+} 
+
+/* PHOTO ADJ. SECTION */
+.gustavo, .drank, .suits{
+  width: 200px;
+  height: 200px;
+}
+.barber1, .barber2, .tailor{
+  width: 247px;
+  height: 298px;
+}
+.custom{
+  width: 1245px;
+  height: 289px;
+  padding-left: 5%;
+}
+/* VIDEO ADJ. SECTION */ 
+.cover-banner-video{
+  width: 500px;
+  height: 432px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 20.8px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.hamburger{
+  display: none;
+}
+
+.line{
+  width: 25px;
+  height: 1px;
+  margin-bottom: 4px;
+  background: black;
+}
+
+.nav-links, .nav-icons{
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.nav-icons img{
+  width: 2rem;
+}
+/* FIRST SECTION */
+a{
+  color: black;
+  text-decoration: none;
+}
+
+ h2, h3, h4, h5, h6, nav a, .hero-text p, .hero-discount{
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 7rem;
+  line-height: 9rem;
+}
+
+h3, .discount-price{
+  font-size: 4rem;
+  line-height: 5rem;
+}
+h1, h3{
+  font-family: 'Monoton', cursive;
+}
+button{
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  font-family: 'Libre Baskerville',serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  padding: 1rem 2rem;
+  border: 1px solid gray;
+}
+
+button:hover,
+button:focus{
+    background: black;
+    color: white;
+}
+
+button:focus{
+    outline: 1px solid gray;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+
+/* SECOND SECTION */
+.hero-container .clearfix:after {
+  background: url ("mainPhoto1.jpeg");
+  background-position: right;
+  background-size: cover;
+  height: 80vh;
+  padding: 10%;
+}
+
+.hero-text{
+  width: 60%;
+  color: black;
+}
+
+.hero-text p{
+  letter-spacing: 0.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-discount{
+  background: black;
+  color: white;
+  width: 250px;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.hero-discount > h4{
+  margin: 2.5rem 0;
+}
+
+.hero-discount > button{
+  margin-top: 2rem;
+  width: 100%;
+  color: white;
+  background: black;
+}
+
+.hero-discount > button:hover,
+.hero-discount > button:focus{
+    background: white;
+    color: black;
+}
+.about{
+  padding: 10%;
+  margin: 2rem auto;
+}
+
+.about-flex-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.about-flex-box{
+  text-align: center;
+}
+
+.about-momentum-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+  flex-wrap: wrap;
+}
+.about-momentum-box{
+  width: 50%;
+  padding: 5% 10%;
+}
+
+/* CREW SECTION */
+
+.crew-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  gap: 5rem;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+.crew-box{
+  border: 1px solid black;
+  width: 250px;
+  height: 301px;
+  background: gray;
+}
+.crew-details{
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 80%;
+  transform: translateY(-20px);
+}
+.crew-offer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+}
+.services-offer-box{
+  width: 50%;
+}
+/*********************************
+/* LOOKBOOK SECTION */
+/*********************************/
+
+.lookbook  {
+  width:  100%;
+  height:  186vh;
+  border:  1px  solid  black;
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  
+  }
+  
+  /* .lookbook {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 8fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  } */
+
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  
+  .box  {
+  border:  1px  solid  red;
+  float:  left;
+  width:  30%;
+  height:  30vh;
+  margin:  10px;
+  background: black;
+  }
+  .one {
+    height: 69vh;
+  }
+  
+  .two {
+    height: 83vh;
+  }
+  
+  .three {
+    height: 80vh;
+  }
+  
+  .four {
+    clear: both;
+    height: 70vh;
+    margin-top: -11vh;
+  }
+  
+  .five {
+    height: 86vh;
+  }
+  
+  .six {
+    height: 78vh;
+    margin-top: -2vh;
+  }
+
+.book {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 950px){
+  h2{
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+  }
+  .hero-text{
+    width: 90%;
+  }
+  .nav-links{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+}
+
+@media (max-width: 500px){
+  h2{
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .hero-container{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(mainPhoto2.jpeg);
+    background-position: right;
+    background-size: cover;
+  }
+
+  .hero-discount{
+    width: 80%;
+    margin: 14rem auto 0 auto;
+    padding: 2rem;
+  }
+  .hero-text{
+    text-align: center;
+  }
+  .nav-icons{
+    display: none;
+  }
+}
