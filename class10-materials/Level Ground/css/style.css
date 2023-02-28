@@ -1,0 +1,325 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li{ display: inline-block;
+}
+
+.whitelogo{
+  background-color: black;
+  width: 40px;
+  height: 40px;
+}
+
+/* Grids and Colors (Temp)*/
+nav{
+  border: 3px solid red;
+}
+.first{
+  border: 3px solid blue;
+}
+.second{
+  border: 3px solid rgb(186, 11, 202);
+}
+.third{
+  border: 3px solid green;
+}
+.fourth{
+  border: 3px solid orange;
+}
+footer{
+  border: 3px solid purple;
+}
+
+.navleft{
+  border: 3px solid dodgerblue;
+}
+.whitewolf{
+  border: 3px solid greenyellow;
+}
+.give{
+  border: 3px solid red;
+}
+
+.third:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.topnav{
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+}
+
+.navleft, .whitelogo, .button4{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button4{
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.topnav, body{
+font-family: 'Roboto', sans-serif;
+}
+
+.whitewolf{
+
+position: relative;
+left: 36.5%;
+}
+
+header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ul {
+  list-style-type: none; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+li{
+  display: inline-block;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color:white;
+  background-color: black; /* Remove Before Flight */
+}
+.give{
+ width: 6%;
+ float: right;
+}
+.navleft{
+ float: left;
+}
+.whitewolf{
+  width: 6%;
+  float: left;
+}
+header{
+  background-color: rgb(103, 118, 137);
+}
+.give:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.topnav:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* FIRST SECTION */
+
+.hero-banner-video {
+  display: flex;
+  height: auto;
+  filter: grayscale(100%);
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+  align-items: center;
+  
+}
+
+.overlay {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 720px;
+  right: 0;
+  top: 40%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  box-sizing: inherit;
+  justify-content: center;
+}
+.first{
+  color: white;
+}
+h1{
+  font-weight: bold;
+  font-size: 70px;
+  display: block;
+  box-sizing: inherit;
+}
+
+.first p{
+  margin-left:400px;
+  margin-right:400px;
+  margin-bottom: 100px;
+  line-height: 1.5;
+}
+
+/* SECOND SECTION */
+
+.second {
+  background: white;
+  text-align: center;
+  color:rgb(22, 31, 42);
+  padding: 100px;
+}
+.second p {
+  margin-left:500px;
+  margin-right:500px;
+  margin-bottom: 100px;
+  line-height: 1.5;
+}
+
+.second h2 {
+  font-size: 50px;
+  padding: 0px;
+}
+
+/* THIRD SECTION */
+
+.gym{
+  background-color: #dbdfe2;
+  color: #161f2a;
+  width:50%;
+  float:left;
+  text-align: center;
+  padding: 100px;
+}
+.gym p {
+  margin-left:100px;
+  margin-right:50px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+.gym button{
+  padding: 10px 25px 10px 25px;
+}
+
+.visit {
+  background-color: #dbdfe2;
+  color: rgb(22, 31, 42);
+  width:50%;
+  float:right;
+  text-align: center;
+  padding: 100px;
+}
+
+.visit p {
+  margin-left:50px;
+  margin-right:100px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+.visit button {
+  padding: 10px 25px 10px 25px;
+}
+#rectangle {
+  width: 300px;
+  height: 150px;
+  background:rgb(103, 118, 137);
+  margin-left: 225px;
+}
+
+/* FOURTH SECTION */ 
+.fourth h2 {
+  font-size: 50px;
+  padding: 0px;
+}
+
+.fourth p {
+  margin-left:500px;
+  margin-right:500px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.fourth button {
+  padding: 10px 25px 10px 25px;
+}
+/* FOOTER SECTION */
+
+footer {
+  background-color: #161f2a;
+  color: white;
+  padding: 100px 50px 200px 50px;
+}
+
+.underground {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.contact {
+  order:5;
+}
+
+.bottom {
+  width:100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
