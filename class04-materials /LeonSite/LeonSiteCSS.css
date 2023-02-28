@@ -1,0 +1,50 @@
+body{
+    background: rgb(160, 226, 235);
+    box-sizing: content-box;
+    color: white;
+    max-width: 1000px;
+    max-height: 1000px;
+    border: solid rgb(49, 190, 73) 5px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: "open sans";
+    font-weight: 700;
+    padding-left: 40px;
+    text-align: start;
+}
+ul{
+    list-style-type: none;
+    text-align: center; 
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+img{
+    max-width: 20%;
+    height: auto;
+    float: right;
+    margin: 20px;
+}
+
+span{
+    color: rgb(128, 135,138);
+}
+footer>ul>a{ 
+   text-align: center;
+   color: rgb(49, 190, 73);
+   font-family: sans-serif;
+}
+
+section{
+    font-size:larger;
+    font-weight: 525;
+    padding-left: 40px;
+    text-align: start;
+}
+

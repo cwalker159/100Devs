@@ -1,0 +1,105 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer{
+  height: 100px;
+  border: 3px solid black;
+  clear: both;
+}
+
+section.topbox{
+  height: 200px;
+  width: 33.33333%;
+  border: 3px solid black;
+  float: left;
+}
+
+section.bottombox{
+  height: 300px;
+  width: 50%;
+  border: 3px solid black;
+  float: left;
+}
+@media screen and (max-width: 400px){
+    #blackbox{
+      float: none;
+      width: 100%;
+    }
+    header, footer{
+        background: goldenrod;
+    }
+    section{
+        background: purple;
+    }
+  }
+@media (min-width: 401px) and (max-width: 560px){
+    section{
+        background: red;
+    }
+    header, footer{
+        background: aquamarine
+    }
+    #blackbox.echo, #blackbox.delta{
+        display: none;
+    }
+}
+@media (min-width: 501px) and (max-width: 700px){
+    section{
+        background: green;
+    }
+    header, footer{
+        background: pink;
+    }
+    #blackbox.echo, #blackbox.delta{
+        display: none;
+    }
+}
+@media (min-width: 701px) and (max-width: 800px){
+
+    section{
+        background: orangered;
+    }
+    header, footer{
+        background: blue;
+    }
+    #blackbox.charlie{
+        display: none;
+    }
+    #blackbox.alpha, #blackbox.bravo{
+        width: 50%;
+    }
+}
+@media (min-width: 801px) and (max-width: 900px){
+    section{
+        background:lightgreen
+    }
+    header, footer{
+        background: lightsalmon;
+    }
+} 
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
